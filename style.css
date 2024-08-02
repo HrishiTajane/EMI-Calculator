@@ -1,0 +1,131 @@
+body {
+    background-color: rgb(252, 252, 252);
+}
+.calculator{
+    background-color: rgb(233, 233, 233);
+    padding: 20px;
+}
+.page-header {
+    animation: movename 1.2s ease-in-out;
+}
+hr{
+    margin-top: -20px;
+}
+
+@keyframes movename {
+    from {
+        transform: translate(-10px, -20px);
+        opacity: 0;
+    }
+
+}
+
+.div {
+    animation: moveleft 1.2s ease-in-out;
+}
+
+.div2 {
+    animation: moveright 1.2s ease-in-out;
+}
+
+@keyframes moveleft {
+    from {
+        transform: translate(-50px, 0px);
+        opacity: 0;
+    }
+
+}
+
+@keyframes moveright {
+    from {
+        transform: translate(50px, 0px);
+        opacity: 0;
+    }
+}
+
+@keyframes movedown {
+    from {
+        transform: translate(-10px, 0px);
+        opacity: 0;
+
+    }
+}
+
+.calculator-row {
+    border: 3px solid rgb(184, 184, 184);
+    border-style: dashed;
+    margin: 10px;
+    animation: movedown 0.5s ease-in;
+}
+
+#Amount {
+    margin-left: 50%;
+    width: 125px;
+    height: 35px;
+    border-radius: 5px;
+    border: 3px solid grey;
+}
+
+#percentshow {
+    margin-left: 75%;
+    width: 60px;
+    height: 35px;
+    border-radius: 5px;
+    border: 3px solid grey;
+}
+
+#yearshow {
+    margin-left: 75%;
+    width: 60px;
+    height: 35px;
+    border-radius: 5px;
+    border: 3px solid grey;
+}
+
+.range {
+    width: 100%;
+}
+
+#labeldiv {
+    float: left;
+    width: 50%;
+
+}
+
+#textdiv {
+    float: right;
+    width: 50%;
+    margin-bottom: 5px;
+}
+
+p {
+    font-size: 35px !important;
+    color: black;
+}
+
+#monthly_EMI {
+    font-weight: 700;
+    color: blue;
+    font-size: 32px;
+}
+
+.EMIBox {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.Box {
+    height: 275px;
+    width: 235px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: rgb(211, 211, 211);
+    border-radius: 2px;
+}
+
+.amountshowdiv{
+    border-bottom: 3px solid rgb(184, 184, 184);
+    border-bottom-style: dashed;
+}

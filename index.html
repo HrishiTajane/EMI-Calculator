@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset="UTF-8">
+   <title> EMI Calculator</title>
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <link rel="stylesheet" href="style.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+   <div class="container">
+
+
+      <h1 class="text-center mt-3 mb-4 page-header"> EMI Calculator </h1>
+      <hr>
+      <hr>
+
+      <div class="calculator my-5">
+         <div class="row calculator-row">
+            <div class="col-md-5 mx-auto div">
+               <form>
+                  <br>
+                  <div id="labeldiv">
+                     <label id="label">Loan Amount:</label>
+                  </div>
+                  <div id="textdiv">
+                     <input type="text" id="Amount" value=100000 name="loanAmount" readonly />
+                  </div>
+
+                  <div id="">
+                     <input type="range" class="range" value=100000 min="100000" max="10000000" step="25000"
+                        id="loanAmount" oninput="fetch()" />
+                  </div>
+
+                  <div id="labeldiv">
+                     <label>&#8377 1 Lac</label>
+                  </div>
+
+                  <div id="textdiv">
+                     <label style="margin-left:80%;">&#8377 1 Cr</label>
+                  </div><br><br><br>
+
+
+
+
+                  <div id="labeldiv">
+                     <label id="label">Interest rate(% P.A.):</label>
+                  </div>
+                  <div id="textdiv">
+                     <input type="text" value="1" id="percentshow" readonly>
+                  </div>
+
+                  <div>
+                     <input type="range" class="range" value="1" min="1" max="15" id="percent" oninput="fetch()">
+                  </div>
+
+                  <div id="labeldiv">
+                     <label>1 %</label>
+                  </div>
+
+                  <div id="textdiv">
+                     <label style="margin-left:85%;">15 %</label>
+                  </div>
+                  <br><br><br>
+
+
+
+                  <div id="labeldiv">
+                     <label id="label">Tenure(Years):</label>
+                  </div>
+                  <div id="textdiv">
+                     <input type="text" value="1" id="yearshow" readonly>
+                  </div>
+
+                  <div id="">
+                     <input type="range" class="range" value="1" min="1" max="20" id="year" oninput="fetch()">
+                  </div>
+                  <div id="labeldiv">
+                     <label>1</label>
+                  </div>
+
+                  <div id="textdiv">
+                     <label style="margin-left:90%;">20</label>
+                  </div>
+                  <br><br>
+
+               </form>
+            </div>
+
+
+            <div class="col-md-3 mx-auto EMIBox div2">
+               <div class="Box">
+                  <br>
+                  <div class="text-center">
+                     <h4>Equated Monthly Installments (EMI) </h4>
+                     <i class="fa fa-rupee mt-3" id="monthly_EMI"> 0 </i>
+
+                  </div>
+               </div>
+            </div>
+
+
+
+            <div class="col-md-3 mx-auto div2">
+               <br>
+
+               <div class="amountshowdiv">
+                  <h5 class="mt-2">Principal Amount : </h5>
+                  <p class="fa fa-rupee" id="pricipalAmount"> 0</p>
+               </div>
+
+
+               <div class="amountshowdiv my-5">
+                  <h5 class="mt-4">Interest Amount : </h5>
+                  <p class="fa fa-rupee" id="Interest_Amount"> 0 </p>
+               </div>
+
+               <div class="amountshowdiv">
+                  <h5 class="mt-4">Total Amount Payable : </h5>
+                  <p class="fa fa-rupee" id="total_loan-amount"> 0</p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <script src="main.js"></script>
+</body>
+
+</html>
